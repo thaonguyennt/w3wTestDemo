@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectLangugeViewController" customModule="w3wDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="Od0-dw-TQd" id="3N1-SH-IWn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jsB-LK-90P">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Language" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Plf-c4-geo">
+                            <rect key="frame" x="20" y="10" width="353" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Od0-dw-TQd">
+                            <rect key="frame" x="20" y="41" width="353" height="698"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="UAz-lf-xdD"/>
+                                <outlet property="delegate" destination="-1" id="jKy-yR-OFr"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Od0-dw-TQd" firstAttribute="leading" secondItem="jsB-LK-90P" secondAttribute="leading" constant="20" id="NmS-I6-hRf"/>
+                        <constraint firstItem="Plf-c4-geo" firstAttribute="top" secondItem="jsB-LK-90P" secondAttribute="top" constant="10" id="Qsh-vE-ppD"/>
+                        <constraint firstItem="Plf-c4-geo" firstAttribute="leading" secondItem="jsB-LK-90P" secondAttribute="leading" constant="20" id="XYO-rg-ERl"/>
+                        <constraint firstAttribute="trailing" secondItem="Plf-c4-geo" secondAttribute="trailing" constant="20" id="fou-GG-5iu"/>
+                        <constraint firstAttribute="trailing" secondItem="Od0-dw-TQd" secondAttribute="trailing" constant="20" id="jHd-9X-Ybi"/>
+                        <constraint firstItem="Od0-dw-TQd" firstAttribute="top" secondItem="Plf-c4-geo" secondAttribute="bottom" constant="10" id="r8T-c4-U8A"/>
+                        <constraint firstAttribute="bottom" secondItem="Od0-dw-TQd" secondAttribute="bottom" constant="20" id="zge-6O-1WH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jsB-LK-90P" secondAttribute="trailing" id="Efq-4k-vtk"/>
+                <constraint firstItem="jsB-LK-90P" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="TfQ-3g-fGj"/>
+                <constraint firstItem="jsB-LK-90P" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Tgu-XM-f4s"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="jsB-LK-90P" secondAttribute="bottom" id="fCQ-AV-LOh"/>
+            </constraints>
+            <point key="canvasLocation" x="-74" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
